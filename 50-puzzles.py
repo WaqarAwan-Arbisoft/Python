@@ -305,3 +305,45 @@ C
 print('P"yt\'h"on')
 # Output: P"yt'h"on
 # Reason: Use of escape characters using backslash(\)
+
+
+# ***** Question-43 *****
+def q43Func(val1=3, val2=4, val3=6):
+    return val1 + val2 + val3
+
+
+q43Values = {"val1": 9, "val3": -1}
+print(q43Func(**q43Values))
+# Output: 12
+# Reason: Unpacking keyword arguments with dictionaries
+
+
+# ***** Question-44 *****
+print("Answer")
+# while True:
+#     pass
+print("42")
+# Output: Answer
+# Reason: True will never be false and the loop will keep on iterating infinitely
+
+
+# ***** Question-46 *****
+q46Pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+# lexicographical sorting (ascending)
+q46Pairs.sort(key=lambda pair: pair[1])
+print(q46Pairs[0][1])
+# Output: four
+# Reason: sorting an array based on the provided key
+
+
+# ***** Question-47 *****
+q47Inst = {"@instagram": 232,
+           "@selenagomez": 133,
+           "@victoriassecret": 59,
+           "@cristiano": 120,
+           "@beyonce": 111,
+           "@nike": 76}
+inst_names = set(filter(lambda key: q47Inst[key] > 60, q47Inst.keys()))
+print(inst_names)
+# Output: {'@instagram', '@beyonce', '@selenagomez', '@nike', '@cristiano'}
+# Reason: set of keys with value higher than 60
